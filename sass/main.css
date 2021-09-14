@@ -526,8 +526,8 @@ body {
 .future {
   width: 75%;
   margin: 0 auto;
-  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.35);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.35);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   padding: 6rem;
@@ -969,8 +969,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(159, 144, 176, 0.8)), to(rgba(122, 112, 134, 0.8))), url(../img/stay-connected.jpg);
-  background-image: linear-gradient(to right bottom, rgba(159, 144, 176, 0.8), rgba(122, 112, 134, 0.8)), url(../img/stay-connected.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(159, 144, 176, 0.8)), to(rgba(122, 112, 134, 0.8))), url("../../img/stay-connected.jpg");
+  background-image: linear-gradient(to right bottom, rgba(159, 144, 176, 0.8), rgba(122, 112, 134, 0.8)), url("../../img/stay-connected.jpg");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
