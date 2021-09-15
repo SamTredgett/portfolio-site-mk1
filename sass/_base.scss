@@ -11,6 +11,8 @@
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
+
+    --shadow-dark:0 2rem 6rem rgba(0,0,0,3);
 }
 
 * {
@@ -26,6 +28,7 @@ html {
 
 }
 body {
+    text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -35,4 +38,12 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
 
+}
+
+a, i{
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--color-grey-light-3);
 }
