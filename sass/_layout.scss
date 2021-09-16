@@ -6,7 +6,7 @@
     min-height: 50rem;
 }
 .header {
-    padding-top: 1.625rem;
+    padding-top: 2.12rem;
     min-height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
@@ -26,11 +26,30 @@
     justify-content: space-between;
 
 }
-.project-view{
+.content-view{
     flex: 1;
     background-color: #fff;
+    
+}
 
-    //  test settings
 
-    height: 80rem;
+.content-pane{
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    font-size: 1.4rem;
+
+}
+
+.bio {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    padding: 3rem;
+}
+.skills {
+    background-color: var(--color-grey-dark-2);
+    flex: 1;
 }
