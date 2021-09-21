@@ -458,3 +458,146 @@
         outline: none;
     }
 }
+
+
+
+
+//////////////////////////////////////////////
+// CONTACT ME FORM
+
+.wrapper  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 85vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-grey-light-2);
+    border-radius: 2rem;
+
+}
+
+.form-area {
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  3rem;
+    box-shadow: 0 40px 20px var(--shadow-light);
+    border-radius: 1.4rem;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        width: 100%;  
+    }
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 1000px; 
+    }
+
+}
+
+.img-area {
+    width: 100%;
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+div.img-area {
+    height: 300px;
+    width: 100%;
+    background: url(../img/landscape-3.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    @media only screen and (min-width: 768px) {
+        height: 420px;
+        min-width: 360px; 
+        border-radius: 1.5rem;
+    }
+}
+
+.left-text {
+    color: #fff;
+    padding: 8.5rem 6rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    p {
+        text-transform: none;
+    }
+    i{
+        margin-right: 1.5rem;
+    }
+}
+
+.right-text {
+    margin: 5rem 4rem;
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin: 0 0 2rem;    
+    }
+
+    a {
+        background: var(--color-grey-light-1);
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        @media only screen and (max-width: 767px) {
+            text-align: center; 
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        font-family: sans-serif;
+        
+    }
+    &__icon-tray {
+        font-size: 2.5rem;
+        i {
+            color: var(--color-grey-dark-1);
+        }
+        a {
+            background: none;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        margin: 0 60px;
+        max-width: 640px;
+    }
+    @media only screen and (max-width: 767px) {
+        margin: 2rem 1.8rem;
+        text-align: center;
+        
+    }
+
+}
+
+

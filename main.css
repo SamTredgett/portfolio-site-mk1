@@ -683,6 +683,179 @@ a, i {
   outline: none;
 }
 
+.wrapper {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 85vh;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--color-grey-light-2);
+  border-radius: 2rem;
+}
+
+.form-area {
+  background: #fff;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem;
+  -webkit-box-shadow: 0 40px 20px var(--shadow-light);
+          box-shadow: 0 40px 20px var(--shadow-light);
+  border-radius: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-area {
+    max-width: 1000px;
+  }
+}
+
+.img-area {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-area {
+    display: none;
+  }
+}
+
+div.img-area {
+  height: 300px;
+  width: 100%;
+  background: url(../img/landscape-3.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  div.img-area {
+    height: 420px;
+    min-width: 360px;
+    border-radius: 1.5rem;
+  }
+}
+
+.left-text {
+  color: #fff;
+  padding: 8.5rem 6rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.left-text p {
+  text-transform: none;
+}
+
+.left-text i {
+  margin-right: 1.5rem;
+}
+
+.right-text {
+  margin: 5rem 4rem;
+}
+
+.right-text h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 0 2rem;
+}
+
+.right-text a {
+  background: var(--color-grey-light-1);
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.right-text input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .right-text input {
+    text-align: center;
+  }
+}
+
+.right-text textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-family: sans-serif;
+}
+
+.right-text__icon-tray {
+  font-size: 2.5rem;
+}
+
+.right-text__icon-tray i {
+  color: var(--color-grey-dark-1);
+}
+
+.right-text__icon-tray a {
+  background: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-text__icon-tray {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .right-text {
+    margin: 0 60px;
+    max-width: 640px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .right-text {
+    margin: 2rem 1.8rem;
+    text-align: center;
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
