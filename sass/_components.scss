@@ -287,13 +287,17 @@
     display:flex;
     align-items: center;
     // justify-content: space-between;
-
+    @media only screen and (max-width: 600px){
+        display:none;
+    }
     &--description {
-        margin-right: auto;
+        // margin-right: auto;
+        margin-left: auto;
     }
     &__images {
-        
+        margin-left: 5rem;
         display: flex;
+        margin-right: auto;
         &--image {
             box-sizing: content-box;
             height: 4rem;
@@ -301,7 +305,7 @@
             border-radius: 50%;
 
             &:not(:last-child){
-                margin-right: -1.5rem;
+                margin-right: -0.5rem;
             }
         }
     }
@@ -601,3 +605,7 @@ div.img-area {
 }
 
 
+.scs__header {
+    font-weight: 600;
+    border-bottom: var(--line);
+}
