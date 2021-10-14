@@ -57,6 +57,21 @@
         flex-direction: column;
     }
 
+    &--projects {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        // margin: 40px 0;
+        background-color: var(--color-grey-light-1);
+
+
+
+
+
+
+    }
 
 
 }

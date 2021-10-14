@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         <link rel="shortcWut icon" type="image/png" href="img/favicon.png">
-        <script src="https://kit.fontawesome.com/b149441de4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">        <script src="https://kit.fontawesome.com/b149441de4.js" crossorigin="anonymous"></script>
         <title>Sam Tredgett</title>
     </head>
     <body>
@@ -62,97 +62,113 @@
 
                 
                 <main class="content-view">
-                    <div class='content-pane'>
-                        <ul class="cards">
-                            <li class="cards__item">
-                              <div class="card">
-                                <div class="card__image card__image--netmatters"></div>
-                                <div class="card__content">
-                                  <div class="card__title">Netmatters Site</div>
-                                  <p class="card__text">This was a HTML and SCSS reproduction of the Netmatters Ltd website, the company helping me learn many of the skills you see on display here in these projects and in this site itself.</p>
-                                    <button class="btn btn__card" onclick="window.location.href='https://github.com/SamTredgett/HTMLandCSSReflections'" target="_blank">
-                                        <span class="btn__visible">View</span>
-                                        <span class="btn__invisible">Code and stuff..</span>
-                                    </button>
-                                </div>
-                              </div>
-                            </li> 
+                     <div class='content-pane--projects'>
+                       <!-- Card 1 - Netmatters -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
 
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 1  -->
 
+                        <!-- Card 2  - DevSearch -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
 
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 2  -->
+                        <!-- Card 3  - FRAMe -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
 
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 3  -->
+                        <!-- Card 4  - WAR -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
 
-                            <li class="cards__item">
-                              <div class="card">
-                                <div class="card__image card__image--devsearch"></div>
-                                <div class="card__content">
-                                  <div class="card__title">DevSearch</div>
-                                  <p class="card__text">A larger website, built from the ground up using Python's Django framework. It has its own restful API, AWS integration and JavaScript too! Sign up and have a look around DevSearch. </p>
-                                  <a href="http://tinyledger.herokuapp.com" class="btn btn__card">
-                                  <button class="btn btn__card" > 
-                                    <span class="btn__visible">View</span>
-                                    <span class="btn__invisible">Code and stuff..</span>
-                                </button>
-                              </a>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="cards__item">
-                              <div class="card">
-                                <div class="card__image card__image--frame"></div>
-                                <div class="card__content">
-                                  <div class="card__title">Project F.R.A.M.E</div>
-                                  <p class="card__text">This was my final year group project with some peers at the University of Kent. A management system that used facial recognition to monitor student attendance. Built with Python</p>
-                                  <button class="btn btn__card" onclick="window.location.href='https://github.com/eyespied/F.R.A.M.E'">
-                                    <span class="btn__visible">View</span>
-                                    <span class="btn__invisible">Code and stuff..</span>
-                                </button>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="cards__item">
-                              <div class="card">
-                                <div class="card__image card__image--war"></div>
-                                <div class="card__content">
-                                  <div class="card__title">War</div>
-                                  <p class="card__text">A Python Program that allows a computer to play a game of war against itself, this was one of my earlier but more memorable entrances into python programming. </p>
-                                  <button class="btn btn__card" onclick="window.location.href='https://github.com/SamTredgett/war'">
-                                    <span class="btn__visible">View</span>
-                                    <span class="btn__invisible">Code and stuff..</span>
-                                </button>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="cards__item">
-                                <div class="card">
-                                  <div class="card__image card__image--natours"></div>
-                                  <div class="card__content">
-                                    <div class="card__title">Natours</div>
-                                    <p class="card__text">Natours was the first of my major projects getting better at using HTML and SCSS to build attractive and modern websites, the site features a variety of animations and modern UI elements.</p>
-                                    <button class="btn btn__card" onclick="window.location.href='https://github.com/SamTredgett/NatoursProject'">
-                                        <span class="btn__visible">View</span>
-                                        <span class="btn__invisible">Code and stuff..</span>
-                                    </button>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="cards__item">
-                                <div class="card">
-                                  <div class="card__image card__image--record"></div>
-                                  <div class="card__content">
-                                    <div class="card__title">Media Library</div>
-                                    <p class="card__text">Branching into C# this year was an enjoyable experience, it felt very familiar to working with Java in university. This media library allows full querying, retrieval and storage of a variety of Media Types.</p>
-                                    <button class="btn btn__card" onclick="window.location.href='https://github.com/SamTredgett/MediaLibrary'">
-                                        <span class="btn__visible">View</span>
-                                        <span class="btn__invisible">Code and stuff..</span>
-                                    </button>
-                                  </div>
-                                </div>
-                              </li>
-                          </ul>
-                </div>
-            </main>
-            </div>
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 4 -->
+                        <!-- Card 5  - Natours -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
+
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 5  -->
+                        <!-- Card 6  - Media Library -->
+                        <div class="card">
+                          <div class="card__img">
+                            <img src="img/netmatters.png" alt="">
+                          </div>
+                          <div class="card__content">
+                            <div class="card__content--box">
+                              <h3>Netmatters Site Replica <br> HTML & CSS</h3>
+
+                            </div>
+                            <ul class="card__content--sci">
+                              <li><a style="--i:1;" href=""><i class="fas fa-chevron-right"></i></a></li>
+                              <li><a style="--i:2;" href=""><i class="fas fa-code-branch"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End Card 6  -->
+                     </div>
+                </main>
+            
         </div>
         
         <script src="js/index.js"></script>
