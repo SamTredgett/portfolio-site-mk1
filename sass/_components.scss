@@ -418,6 +418,7 @@
     color: #fff;
     overflow: hidden;
     box-shadow: none;
+    margin-top: 1rem;
 
     
 
@@ -483,7 +484,7 @@
     justify-content: center;
     background: var(--color-grey-light-2);
     border-radius: 2rem;
-
+    
 }
 
 .form-area {
@@ -545,6 +546,9 @@ div.img-area {
 
 .right-text {
     margin: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
     h2 {
         font-weight: 600;

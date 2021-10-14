@@ -49,6 +49,7 @@
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
     font-size: 1.4rem;
+    justify-content: center;
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem;
     }
