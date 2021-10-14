@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="shortcWut icon" type="image/png" href="img/logo2-title.png">
         <script src="https://kit.fontawesome.com/b149441de4.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Sam Tredgett</title>
     </head>
     <body>
@@ -62,7 +63,7 @@
                         <div class="content-pane">
                             <div class="wrapper">
                                 <div class="form-area">
-                                    <div class="img-area">
+                                    <div class="img-area"> <!-- Left column -->
                                         <div class="left-text">
                                             <a href="https://www.github.com/samtredgett">
                                                 <i class="fab fa-github"></i> GitHub
@@ -73,8 +74,13 @@
                                                 <p class="paragraph"> Connect with me</p>
                                             </a>
                                         </div>
-                                    </div>
-                                        <div class="right-text">
+                                    </div> <!-- End left Column -->
+                                   
+
+
+                                        
+                                        <div class="right-text"> <!-- Right Column -->
+                                            <!-- Responsive icon tray that appears when left column disappears -->
                                             <div class="right-text__icon-tray">
                                                 <a href="https://www.github.com/samtredgett"><i class="fab fa-github"></i></a>
                                                 <a href="https://www.linkedin.com/in/sam-tredgett-09605693/"><i class="fab fa-linkedin"></i></a>
@@ -82,17 +88,26 @@
 
 
 
-                                            <h2>Get in Touch</h2> 
-                                            <form action="">
-                                                <input type="text" placeholder="Enter Your Name">
-                                                <input type="email" placeholder="Enter Your Email">
-                                                <textarea style="resize: none;"name="" id="" cols="30" rows="5" placeholder="Write your message here..."></textarea>
+                                            <h2>Get in Touch</h2>
+                                            <p><strong> Please note, this form is not currently functional. Reach me through LinkedIn</strong></p> 
+                                            <form class="contact-form" action="">
+                                                <!-- Input fields -->
+                                                <input class="contact-name input" type="text" placeholder="Enter Your Name">
+                                                <input class="contact-email input"   type="text"  placeholder="Enter Your Email">
+                                                <textarea class="contact-message input" style="resize: none;"name="" id="" cols="30" rows="5" placeholder="Write your message here..."></textarea>
+                                                
+                                                <!-- Rollover Button -->
                                                 <button class="btn contact-btn" >
                                                     <span class="btn__visible">Submit</span>
                                                     <span class="btn__invisible">All done?</span>
-                                                </button>
+                                                </button> 
+                                                <div class="errors"></div>
+                                                
+                                                
                                             </form>
-                                        </div>
+                                           
+                                        </div> <!-- End of right column -->
+                                        
                                 </div>
                             </div>
                         </div>
@@ -100,5 +115,6 @@
             </div>
         </div>
         <script src="js/index.js"></script>
+
     </body>
 </html>

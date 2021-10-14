@@ -486,6 +486,45 @@
     border-radius: 2rem;
     
 }
+.contact-form {
+    outline: none;
+    &input:hover {
+        border: solid 1px green;
+    }
+    .error {
+        border: solid 1px red;
+    }
+    .errors {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        padding: 15px;
+        pointer-events: none;
+         &-close:hover {
+            cursor: pointer;
+         }
+        .error {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(230, 20, 20, 0.8);
+            color: #FFF;
+            font-size: 14px;
+            transform: translateY(300px);
+            pointer-events: all;
+            margin-bottom: 10px;
+            
+            animation: slide-in 1s ease-out forwards;
+        }
+        
+        @keyframes slide-in {
+            to {
+            transform: translateY(0px);
+            }
+        }
+}
+}
 
 .form-area {
     background: #fff;
@@ -524,16 +563,24 @@ div.img-area {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     @media only screen and (min-width: 768px) {
         height: 420px;
         min-width: 360px; 
         border-radius: 1.5rem;
     }
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .left-text {
     color: #fff;
-    padding: 8.5rem 6rem;
+    margin-right: 10rem;
+    margin-bottom: 12rem;
+    margin-top: auto;
+ //   padding: 10rem 6rem;
     font-size: 2rem;
     text-transform: uppercase;
     p {
