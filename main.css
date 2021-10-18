@@ -160,9 +160,9 @@ a, i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -983,6 +983,10 @@ div.img-area {
       -ms-flex-pack: center;
           justify-content: center;
   border: solid 1pxrgba 255, 255, 255, 0.2;
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .card__img {
@@ -996,14 +1000,14 @@ div.img-area {
   -o-object-fit: cover;
      object-fit: cover;
   height: 500px;
-  width: 700px;
+  width: 500px;
 }
 
 .card__content {
   position: absolute;
-  bottom: -1600px;
+  bottom: -160px;
   width: 100%;
-  height: 140px;
+  height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,40 +1022,124 @@ div.img-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-transition: bottom 0.5s;
-  transition: bottom 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card__content--box h3 {
+  margin: 20px 0 15px;
   color: white;
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.1em;
+  -webkit-transition: top 0.5s ease-in;
+  transition: top 0.5s ease-in;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__content--box h3 span {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: initial;
 }
 
 .card__content--sci {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  bottom: 10px;
 }
 
-.card__content--sci li {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
-  list-style: none;
-  font-size: 2rem;
+.card .card__content .card__content--box h3 {
+  display: inline-block;
+  margin: 20px 0 15px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.1em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .card:hover .card__content {
   bottom: 0px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover .card__content .card__content--box h3 {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.card .card__content .card__content--sci li a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.card:hover .card__content .card__content--sci li {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card .card__content .card__content--sci li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 10px;
+  list-style: none;
+  font-size: 3rem;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.card:hover .card__content .card__content--sci li {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.card .card__content .card__content--sci .delay-1 {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.card .card__content .card__content--sci .delay-2 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.card .card__content .card__content--sci .delay-3 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .transition {
