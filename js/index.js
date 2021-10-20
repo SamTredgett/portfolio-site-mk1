@@ -105,7 +105,7 @@ function handleErrors (errs) {
     errs.map((er) => {
         er.el.classList.add('error');
         
-        str += er.text + ", ";
+        str += er.text + " ";
     });
     errs[0].el.focus();
 

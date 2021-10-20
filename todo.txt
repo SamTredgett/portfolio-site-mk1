@@ -1,0 +1,6 @@
+Sorting out main javascript issues: 
+ - Error messaging isssues and clarity 
+ - Conflicting form validation
+ - maybe implement browser detection for firefox so that the card animations are
+ consistent.
+
