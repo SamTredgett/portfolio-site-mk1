@@ -1,6 +1,5 @@
 Sorting out main javascript issues: 
- - Error messaging isssues and clarity 
- - Conflicting form validation
- - maybe implement browser detection for firefox so that the card animations are
- consistent.
+ - add some kind of call to action event for text on Contact form that makes it 
+ obvious that they're clickable
+ - maybe add cursor grab to project cards
 
