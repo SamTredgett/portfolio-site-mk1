@@ -77,16 +77,22 @@ function validateForm (e) {
     }
 
     if (errors.length > 0) {
-        alert('Please fill out all fields the form');
+        alert("Please check you've entered your information correctly.");
         handleErrors(errors);
         return false;
     }
-    alert('Form submitted.')
+    successfullSubmission();
+
     return true;
 
 
     // Form submission un-needed until backend ready
     //regForm.submit();
+}
+
+function successfullSubmission() {
+    alert('Form submitted.');
+
 }
 
 /**
@@ -100,12 +106,19 @@ function validateForm (e) {
  */
 
 function handleErrors (errs) {
-    let str = "You have errors in the following field inputs; ";
+    let str = "You have errors in the following fields: ";
 
     errs.map((er) => {
         er.el.classList.add('error');
         
         str += er.text + " ";
+        er.el.addEventListener('keydown', el => {
+            
+            console.log("Event fired!");
+            el.className.contains('error') ? el.className.remove("error") : console.log('no error to remove');
+            
+
+        });
     });
     errs[0].el.focus();
 

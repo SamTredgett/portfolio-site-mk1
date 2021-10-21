@@ -999,8 +999,8 @@ div.img-area {
 .card__img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 300px;
 }
 
 .card__content {
@@ -1022,8 +1022,8 @@ div.img-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
   -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1096,7 +1096,7 @@ div.img-area {
           transition-delay: 0.3s;
 }
 
-.card .card__content .card__content--sci li a {
+.card .card__content .card__content--sci li a i {
   color: #fff;
   font-size: 24px;
 }

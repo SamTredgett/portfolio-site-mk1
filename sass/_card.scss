@@ -18,8 +18,8 @@
     max-width: 100%;
     img {
       object-fit: cover;
-      height: 500px;
-      width: 500px;
+      height: 400px;
+      width: 300px;
     }
   }
   &__content {
@@ -32,7 +32,7 @@
     align-items: center;
     z-index: 10;
     flex-direction: column;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(35px);
     box-shadow: 0 -10px 10px rgba(0,0,0,0.2);
     border: 1px solid rgba(255,255,255,0.2);
     transition-delay: 0.5s;
@@ -94,10 +94,10 @@
 .card:hover .card__content .card__content--box h3 {
   opacity: 1;
   transform: translateY(0px);
-  transition-delay: 0.3s;  
+  transition-delay: 0.3s;
 }
 
-.card .card__content .card__content--sci li a {
+.card .card__content .card__content--sci li a i {
   color: #fff;
   font-size: 24px;
 }
